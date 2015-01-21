@@ -1,0 +1,10 @@
+t app appmode photo 
+sleep 1 
+t gpio 43 sw out0
+t ia2 -ae still_exp 1600 2 2 
+sleep 1 
+t gpio 43 sw out1
+t gpio 43 sw out0
+sleep 10 
+d:\autoexec.ash 
+REBOOT yes
